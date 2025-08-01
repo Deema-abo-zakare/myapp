@@ -1,0 +1,94 @@
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/font"
+        android:text="الهدف"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+     <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font"
+        android:text=" يرجى اختيار هدف الختمة الذي يناسبك من القاىمة التالية:"
+        android:textColor="#736F6F"
+        android:textSize="20sp"
+         android:layout_gravity="right"
+         android:layout_marginRight="20dp"
+        android:textStyle="bold"/>
+    <RadioButton
+        android:id="@+id/radio_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="شهر واحد"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+    <RadioButton
+        android:id="@+id/radio_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="عشرة أيام"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+    <RadioButton
+        android:id="@+id/radio_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="خمسة عشرة يوما"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+    <RadioButton
+        android:id="@+id/radio_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text=" شهرين"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+    <RadioButton
+        android:id="@+id/radio_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text=" أربعون يوما"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+    <RadioButton
+        android:id="@+id/radio_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text=" أربع شهور"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+</LinearLayout>

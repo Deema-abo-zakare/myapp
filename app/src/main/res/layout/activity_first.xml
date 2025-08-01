@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5FC1BEBE"
+    android:orientation="vertical"
+    android:id="@+id/first"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<ImageView
+    android:id="@+id/img"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:src="@drawable/img"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    />
+    <EditText
+        android:id="@+id/national"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:hint="  National Id"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+
+        android:layout_below="@id/img"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:hint="  Name"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/national"
+      />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:hint="  Password"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name"
+     />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:hint="  Phone"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/password"
+        />
+    <EditText
+        android:id="@+id/what"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:text="  A+"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+    android:layout_below="@id/phone"
+        />
+    <TextView
+        android:id="@+id/ww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have chronic disease?"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/what"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+
+        />
+    <RadioGroup
+        android:id="@+id/radioGroupYesNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ww"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="20sp"
+            android:paddingEnd="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"/>
+    </RadioGroup>
+
+    <Button
+    android:id="@+id/btn_reg"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:text="Register"
+    android:backgroundTint="@color/red"
+    android:layout_below="@id/radioGroupYesNo"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="20dp"
+    />
+    <TextView
+        android:id="@+id/acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have an account:"
+        android:textSize="20sp"
+        android:layout_below="@id/btn_reg"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Login"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_below="@id/btn_reg"
+        android:layout_toRightOf="@id/acc"
+        android:layout_marginTop="10dp"
+
+/>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".setting">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/homeIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/home"
+        app:tint="@color/green"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/q"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="القران الكريم"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/homeIcon"
+        />
+    <Button
+        android:id="@+id/btn_h"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text=" حصن مسلم"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/q"
+        android:layout_below="@id/homeIcon"
+
+        />
+    <Button
+        android:id="@+id/b"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text=" أوقات الصلاة"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/q"
+        />
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="تسبيح"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_toRightOf="@id/q"
+        android:layout_below="@id/btn_h"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:id="@+id/r"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text=" الرقية الشرعية"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/b"
+        />
+    <Button
+        android:id="@+id/btn_t"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="أدعية نبوية"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_toRightOf="@id/r"
+        android:layout_below="@id/btn_a"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:id="@+id/j"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="سنن الجمعة"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/r"
+        />
+    <Button
+        android:id="@+id/aa"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="أدعية نبوية"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/green"
+        android:layout_toRightOf="@id/r"
+        android:layout_below="@id/btn_t"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>
