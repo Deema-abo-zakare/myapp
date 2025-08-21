@@ -4,6 +4,8 @@
     <string name="hello"> ديما ابو زكري</string>
     <string name="welcome">WELCOME,DIMA</string>
     <string name="donate">Donate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

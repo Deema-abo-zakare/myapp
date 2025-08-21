@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- سورة الإخلاص -->
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/myText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قل هو الله الله الصمد لم يلد ولم يولد ولم يكن له كفوا احد"
+            android:textSize="20sp"
+            android:fontFamily="@font/font"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <!-- سورة الفلق -->
+        <TextView
+            android:id="@+id/myTextFalaq"
+            android:layout_gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ (1) مِن شَرِّ مَا خَلَقَ (2) وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ (3)"
+            android:textSize="20sp"
+            android:fontFamily="@font/font"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/myButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <!-- سورة الناس -->
+        <TextView
+            android:id="@+id/myTextNas"
+            android:layout_gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ (1) مَلِكِ ٱلنَّاسِ (2) إِلَٰهِ ٱلنَّاسِ (3) مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ (4) ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ (5) مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ (6)"
+            android:fontFamily="@font/font"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/myButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <!-- دعاء إضافي -->
+        <TextView
+            android:id="@+id/myTextDua"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content"
+            android:text="حسبي الله لا اله الا هو عليه توكلت وهو رب العرش العظيم"
+            android:textSize="20sp"
+            android:fontFamily="@font/font"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/myButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/myTextDua2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="اللهم بك امسينا ةبك اصبحنا وبك نحيا وبك نموت واليك المصير"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/font"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
