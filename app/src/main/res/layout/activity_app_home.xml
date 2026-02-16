@@ -191,4 +191,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/green" />
 
+    <ImageView
+        android:id="@+id/noteficationIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/note"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginLeft="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/green"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

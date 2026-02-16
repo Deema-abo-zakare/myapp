@@ -18,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.myapp.R;
 import com.example.myapp.d;
 import com.example.myapp.message;
+import com.example.myapp.notification;
 
 public class app_home extends AppCompatActivity {
 
@@ -34,6 +35,7 @@ public class app_home extends AppCompatActivity {
         TextView d =findViewById(R.id.d);
         Button start = findViewById(R.id.btn_start);
         ImageView img = findViewById(R.id.settingsIcon);
+        ImageView img1 = findViewById(R.id.noteficationIcon);
         TextView message =findViewById(R.id.r);
         RadioButton radio = findViewById(R.id.radio2);
 
@@ -44,6 +46,14 @@ public class app_home extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(app_home.this, notification.class);
+                startActivity(i);
+            }
+        });
+
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
