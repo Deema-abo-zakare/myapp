@@ -2,7 +2,6 @@ package activites;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -19,6 +18,8 @@ import com.example.myapp.R;
 import com.example.myapp.d;
 import com.example.myapp.message;
 import com.example.myapp.notification;
+import com.example.myapp.EmailPasswordActivity; // شاشة تسجيل الدخول
+import com.google.firebase.auth.FirebaseAuth; // ✅ تسجيل الخروج من Firebase
 
 public class app_home extends AppCompatActivity {
 
@@ -27,63 +28,40 @@ public class app_home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_app_home);
+
+        // تعويض الـ system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        TextView d =findViewById(R.id.d);
+
+        // ربط العناصر من XML
+        TextView d = findViewById(R.id.d);
         Button start = findViewById(R.id.btn_start);
-        ImageView img = findViewById(R.id.settingsIcon);
-        ImageView img1 = findViewById(R.id.noteficationIcon);
-        TextView message =findViewById(R.id.r);
+        ImageView settings = findViewById(R.id.settingsIcon);
+        ImageView notification = findViewById(R.id.noteficationIcon);
+        ImageView logout = findViewById(R.id.logoutIcon);
+        TextView message = findViewById(R.id.r);
         RadioButton radio = findViewById(R.id.radio2);
 
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(app_home.this, setting.class);
-                startActivity(i);
-            }
-        });
-        img1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(app_home.this, notification.class);
-                startActivity(i);
-            }
-        });
+        // الانتقالات بين الصفحات
+        settings.setOnClickListener(v -> startActivity(new Intent(app_home.this, setting.class)));
+        notification.setOnClickListener(v -> startActivity(new Intent(app_home.this, notification.class)));
+        start.setOnClickListener(v -> startActivity(new Intent(app_home.this, start.class)));
+        d.setOnClickListener(v -> startActivity(new Intent(app_home.this, d.class)));
+        message.setOnClickListener(v -> startActivity(new Intent(app_home.this, message.class)));
+        radio.setOnClickListener(v -> Toast.makeText(app_home.this, "أجابة صحيحة", Toast.LENGTH_LONG).show());
 
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(app_home.this, start.class);
-                startActivity(i);
-            }
-        });
+        // تسجيل الخروج
+        logout.setOnClickListener(v -> {
+            // تسجيل الخروج من Firebase
+            FirebaseAuth.getInstance().signOut();
 
-        d.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(app_home.this, d.class);
-                startActivity(i);
-            }
+            // الانتقال إلى شاشة تسجيل الدخول ومنع الرجوع
+            Intent intent = new Intent(app_home.this, EmailPasswordActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         });
-        message.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(app_home.this, message.class);
-                startActivity(i);
-            }
-        });
-        radio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(app_home.this," أجابة صحيحة",Toast.LENGTH_LONG).show();
-
-            }
-        });
-
-
     }
 }
