@@ -12,7 +12,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.myapp.ApiActivity;
 import com.example.myapp.R;
+import com.example.myapp.doaa_nbaoy;
 
 public class setting extends AppCompatActivity {
 
@@ -28,6 +30,9 @@ public class setting extends AppCompatActivity {
         });
         ImageView img = findViewById(R.id.homeIcon);
         Button btn  =findViewById(R.id.btn_h);
+        Button btn_sala = findViewById(R.id.b);
+        Button btnDuaa =findViewById(R.id.btn_t);
+
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +45,25 @@ public class setting extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(setting.this, adjustment.class);
                 startActivity(i);
+            }
+        });
+
+        btn_sala.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(setting.this, ApiActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+
+        btnDuaa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent = new Intent(setting.this, doaa_nbaoy.class);
+            startActivity(intent);
+
             }
         });
 

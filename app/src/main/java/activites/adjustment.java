@@ -15,6 +15,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.myapp.R;
+import com.example.myapp.afterPray;
+import com.example.myapp.athan;
+import com.example.myapp.athkarSalaa;
+import com.example.myapp.sleep;
 
 import learning.MainNewsPage;
 
@@ -32,6 +36,10 @@ public class adjustment extends AppCompatActivity {
         });
         Button btn  = findViewById(R.id.btn_h);
         Button btn1  = findViewById(R.id.q);
+        Button btn2 = findViewById(R.id.b);
+        Button btn3 = findViewById(R.id.btn_a);
+        Button btn4 = findViewById(R.id.btn_t);
+        Button btn5 = findViewById(R.id.r);
         ImageView img = findViewById(homeIcon);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +62,37 @@ public class adjustment extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(adjustment.this, afterPray.class);
+                startActivity(i);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(adjustment.this, athkarSalaa.class);
+                startActivity(i);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(adjustment.this, athan.class);
+                startActivity(i);
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(adjustment.this, sleep.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 
 }

@@ -186,7 +186,8 @@
         android:src="@drawable/ic_logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/green" />
+        app:tint="@color/green"
+        />
 
     <ImageView
         android:id="@+id/settingsIcon"

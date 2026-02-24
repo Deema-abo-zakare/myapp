@@ -2,6 +2,7 @@ package activites;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -14,8 +15,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.myapp.ApiActivity;
 import com.example.myapp.R;
+import com.example.myapp.ayah;
 import com.example.myapp.d;
+import com.example.myapp.hadeth;
 import com.example.myapp.message;
 import com.example.myapp.notification;
 import com.example.myapp.EmailPasswordActivity; // شاشة تسجيل الدخول
@@ -38,6 +42,8 @@ public class app_home extends AppCompatActivity {
 
         // ربط العناصر من XML
         TextView d = findViewById(R.id.d);
+        TextView h = findViewById(R.id.h);
+        TextView a = findViewById(R.id.a);
         Button start = findViewById(R.id.btn_start);
         ImageView settings = findViewById(R.id.settingsIcon);
         ImageView notification = findViewById(R.id.noteficationIcon);
@@ -63,5 +69,24 @@ public class app_home extends AppCompatActivity {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         });
+
+        h.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(app_home.this, hadeth.class);
+                startActivity(i);
+            }
+        });
+
+        a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(app_home.this, ayah.class);
+                startActivity(i);
+            }
+        });
+
+
+
     }
 }

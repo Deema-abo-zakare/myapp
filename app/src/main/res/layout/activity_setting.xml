@@ -94,18 +94,19 @@
         android:layout_below="@id/btn_a"
         android:layout_marginLeft="20dp"
         />
+
     <Button
         android:id="@+id/j"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:layout_marginTop="30dp"
-        android:text="سنن الجمعة"
-        android:textSize="20sp"
-        android:fontFamily="@font/font"
-        android:backgroundTint="@color/green"
-        android:layout_marginLeft="30dp"
         android:layout_below="@id/r"
-        />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/font"
+        android:text="سنن الجمعة"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/aa"
         android:layout_width="150dp"
